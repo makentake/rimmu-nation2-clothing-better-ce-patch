@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <!-- helmets that need to cover the strapped layer too -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_MedEngHelmet_EOD9A" or
+            defName="RNApparel_SecProHelmet_Riot" or
+            defName="RNApparel_Helmet_Juggernaut" or
+            defName="RNApparel_GalacTacFAST_Tan" or
+            defName="RNApparel_OpsCoreFAST_SF"]/apparel/layers</xpath>
+        <value>
+        <layers>
+            <li>Overhead</li>
+            <li>StrappedHead</li>
+        </layers>
+        </value>
+    </Operation>
+
+    <!-- removing unneeded equipped stat offsets -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_ProTecPrime_PizzaTime" or
+            defName="RNApparel_M1Helmet_Vietnam"]/equippedStatOffsets</xpath>
+        <value>
+        <equippedStatOffsets>
+        </equippedStatOffsets>
+        </value>
+    </Operation>
+
+    <!-- heavyweight helmets -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_MedEngHelmet_EOD9A" or
+            defName="RNApparel_Helmet_Juggernaut"]/statBases/Mass</xpath>
+        <value>
+            <Mass>5.5</Mass>
+        </value>
+    </Operation>
+
+    <!-- "lightweight" helmets -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_SF" or
+            defName="RNApparel_SecProHelmet_Riot" or
+            defName="RNApparel_GalacTacFAST_Tan"]/statBases/Mass</xpath>
+        <value>
+            <Mass>2.5</Mass>
+        </value>
+    </Operation>
+</Patch>

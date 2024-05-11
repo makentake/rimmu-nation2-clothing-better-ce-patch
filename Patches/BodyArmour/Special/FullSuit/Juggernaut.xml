@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_MedEng_JuggernautSuit"]/equippedStatOffsets</xpath>
+            <value>
+            <equippedStatOffsets>
+                <CarryBulk>20</CarryBulk>
+                <ReloadSpeed>0.1</ReloadSpeed>
+            </equippedStatOffsets>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_MedEng_JuggernautSuit"]/apparel/layers </xpath>
+        <value>
+            <layers>
+                <li>Middle</li>
+                <li>Webbing</li>
+            </layers>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_MedEng_JuggernautSuit"]/costList</xpath>
+        <value>
+            <costList>
+                <Cloth>40</Cloth>
+                <DevilstrandCloth>42</DevilstrandCloth>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_MedEng_JuggernautSuit"]/statBases/Mass</xpath>
+            <value>
+                <Mass>18.5</Mass>
+            </value>
+    </Operation>
+</Patch>

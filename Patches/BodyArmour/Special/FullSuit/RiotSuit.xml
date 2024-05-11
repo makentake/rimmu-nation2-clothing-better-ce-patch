@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_RiotSuit_SecPro"]/costList</xpath>
+        <value>
+            <costList>
+                <Cloth>35</Cloth>
+                <DevilstrandCloth>30</DevilstrandCloth>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_RiotSuit_SecPro"]/statBases/Mass</xpath>
+            <value>
+                <Mass>15</Mass>
+            </value>
+    </Operation>
+</Patch>

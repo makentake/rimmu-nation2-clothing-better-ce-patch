@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <!-- EOD 9A -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_MedEngHelmet_EOD9A"]/costList</xpath>
+            <value>
+            <costList>
+                <DevilstrandCloth>20</DevilstrandCloth>
+                <Chemfuel>30</Chemfuel>
+            </costList>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+</Patch>

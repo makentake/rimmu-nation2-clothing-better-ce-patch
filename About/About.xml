@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+    <name>Rimmu-Nation^2 Clothing: Better CE Patch</name>
+    <author>takenmake</author>
+    <packageId>takenmake.rnclothingbetterce</packageId>
+    <description>"Super Cool Mod"</description>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+
+    <modDependencies>
+        <li>
+            <packageId>cp.rimmunation.2.clothing</packageId>
+        </li>
+        <li>
+            <packageId>ceteam.combatextended</packageId>
+        </li>
+    </modDependencies>
+</ModMetaData>
+<!--
+When adding a preview photo
+
+Must be called Preview.png
+
+Should be
+640x360
+
+Must Not Be Larger then 1MB in size
+ -->

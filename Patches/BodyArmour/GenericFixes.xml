@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam" or
+            defName="RNApparel_AR500Veritas_Brown" or
+            defName="RNApparel_PointBlankASPC_Black" or
+            defName="RNApparel_BristolBodyArmor_Olive" or
+            defName="RNApparel_VestguardCT101_Navy" or
+            defName = "RNApparel_WarriorDCS_ODGreen" or
+            defName = "RNApparel_DDTGhost_ODGreen" or
+            defName="RNApparel_ENVOVestSystem_Grey" or
+            defName="RNApparel_MBCFantom_Black" or
+            defName = "RNApparel_PointBlankFASTC_CoyoteBrown" or
+            defName="RNApparel_FlyyeFCPC_Multicam" or
+            defName="RNApparel_LBTG3_Multicam" or
+            defName="RNApparel_LBTMPC_Tan" or
+            defName = "RNApparel_OspreyMk3_DDPM" or
+            defName="RNApparel_PACALVC_Tan" or
+            defName="RNApparel_VestguardQRA_Black" or
+            defName="RNApparel_511TacTec_Tan" or
+            defName="RNApparel_ViperLazerSOPC_Tan"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0</ArmorRating_Sharp>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                        </li>
+                        <li>
+                        <ArmorRating_Blunt>0</ArmorRating_Blunt>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+                        <parts>
+                            <li>Shoulder</li>
+                        </parts>
+                        </li>
+                        <li>
+                        <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+                        <parts>
+                            <li>Shoulder</li>
+                        </parts>
+                    </li>
+               </stats>
+             </li>
+        </value>
+    </Operation>
+
+    <!-- armours with pouches -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "RNApparel_FirstSpearAACV2_Multicam" or
+            defName = "RNApparel_AR500Veritas_Brown" or
+            defName = "RNApparel_WarriorDCS_ODGreen" or
+            defName = "RNApparel_DDTGhost_ODGreen" or
+            defName="RNApparel_ENVOVestSystem_Grey" or
+            defName = "RNApparel_PointBlankFASTC_CoyoteBrown" or
+            defName = "RNApparel_OspreyMk3_DDPM" or
+            defName="RNApparel_VestguardQRX_Black" or
+            defName="RNApparel_511TacTec_Tan"]/equippedStatOffsets</xpath>
+        <value>
+        <equippedStatOffsets>
+            <CarryBulk>20</CarryBulk>
+            <ReloadSpeed>0.1</ReloadSpeed>
+        </equippedStatOffsets>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "RNApparel_FirstSpearAACV2_Multicam" or
+            defName = "RNApparel_AR500Veritas_Brown" or
+            defName = "RNApparel_WarriorDCS_ODGreen" or
+            defName = "RNApparel_DDTGhost_ODGreen" or
+            defName="RNApparel_ENVOVestSystem_Grey" or
+            defName = "RNApparel_PointBlankFASTC_CoyoteBrown" or
+            defName = "RNApparel_OspreyMk3_DDPM" or
+            defName="RNApparel_VestguardQRX_Black" or
+            defName="RNApparel_511TacTec_Tan"]/apparel/layers </xpath>
+        <value>
+            <layers>
+                <li>Middle</li>
+                <li>Webbing</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <!-- armours without anything -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_PointBlankASPC_Black" or
+            defName="RNApparel_BristolBodyArmor_Olive" or
+            defName="RNApparel_VestguardCT101_Navy" or
+            defName="RNApparel_MBCFantom_Black" or
+            defName="RNApparel_FlyyeFCPC_Multicam" or
+            defName="RNApparel_LBTG3_Multicam" or
+            defName="RNApparel_LBTMPC_Tan" or
+            defName="RNApparel_PACALVC_Tan" or
+            defName="RNApparel_ViperLazerSOPC_Tan"]/equippedStatOffsets</xpath>
+        <value>
+        <equippedStatOffsets>
+        </equippedStatOffsets>
+        </value>
+    </Operation>
+
+    <!-- 14mm armours -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam" or
+            defName="RNApparel_AR500Veritas_Brown" or
+            defName="RNApparel_PointBlankASPC_Black" or
+            defName="RNApparel_BristolBodyArmor_Olive" or
+            defName="RNApparel_VestguardCT101_Navy" or
+            defName = "RNApparel_WarriorDCS_ODGreen" or
+            defName = "RNApparel_DDTGhost_ODGreen" or
+            defName="RNApparel_ENVOVestSystem_Grey" or
+            defName="RNApparel_MBCFantom_Black" or
+            defName = "RNApparel_PointBlankFASTC_CoyoteBrown" or
+            defName="RNApparel_FlyyeFCPC_Multicam" or
+            defName="RNApparel_LBTG3_Multicam" or
+            defName="RNApparel_LBTMPC_Tan" or
+            defName = "RNApparel_OspreyMk3_DDPM" or
+            defName="RNApparel_PACALVC_Tan" or
+            defName="RNApparel_VestguardQRA_Black" or
+            defName="RNApparel_511TacTec_Tan" or
+            defName="RNApparel_ViperLazerSOPC_Tan"]/costList</xpath>
+        <value>
+            <costList>
+                <Cloth>25</Cloth>
+                <DevilstrandCloth>15</DevilstrandCloth>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam" or
+            defName="RNApparel_AR500Veritas_Brown" or
+            defName="RNApparel_PointBlankASPC_Black" or
+            defName="RNApparel_BristolBodyArmor_Olive" or
+            defName="RNApparel_VestguardCT101_Navy" or
+            defName = "RNApparel_WarriorDCS_ODGreen" or
+            defName = "RNApparel_DDTGhost_ODGreen" or
+            defName="RNApparel_ENVOVestSystem_Grey" or
+            defName="RNApparel_MBCFantom_Black" or
+            defName = "RNApparel_PointBlankFASTC_CoyoteBrown" or
+            defName="RNApparel_FlyyeFCPC_Multicam" or
+            defName="RNApparel_LBTG3_Multicam" or
+            defName="RNApparel_LBTMPC_Tan" or
+            defName = "RNApparel_OspreyMk3_DDPM" or
+            defName="RNApparel_PACALVC_Tan" or
+            defName="RNApparel_VestguardQRA_Black" or
+            defName="RNApparel_511TacTec_Tan" or
+            defName="RNApparel_ViperLazerSOPC_Tan"]/statBases/Mass</xpath>
+            <value>
+                <Mass>7.4</Mass>
+            </value>
+    </Operation>
+
+    <!-- 16mm armours -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_VestguardCT101_Navy" or
+            defName = "RNApparel_OspreyMk3_DDPM" or
+            defName="RNApparel_VestguardQRA_Black"]/costList</xpath>
+        <value>
+            <costList>
+                <Cloth>25</Cloth>
+                <DevilstrandCloth>20</DevilstrandCloth>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_VestguardCT101_Navy" or
+            defName = "RNApparel_OspreyMk3_DDPM" or
+            defName="RNApparel_VestguardQRA_Black"]/statBases/Mass</xpath>
+            <value>
+                <Mass>8.4</Mass>
+            </value>
+    </Operation>
+</Patch>

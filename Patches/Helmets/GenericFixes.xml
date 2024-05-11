@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+  <!-- research fix -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[
+      defName="RNApparel_MedEngHelmet_EOD9A" or
+      defName="RNApparel_GalacTacFAST_Tan" or
+      defName="RNApparel_Helmet_Juggernaut" or
+      defName="RNApparel_SecProHelmet_Riot" or
+      defName="RNApparel_ProTecPrime_PizzaTime" or
+      defName="RNApparel_EXFILBallisticHelmet_Tan" or
+      defName="RNApparel_3MF70HighCut_Tan" or
+      defName="RNApparel_FLUXBallisticHelmet_Raid" or
+      defName="RNApparel_UaRmsTORD_Tan" or
+      defName="RNApparel_VestGuardFAST_Black" or
+      defName="RNApparel_OpsCoreFAST_Tan" or
+      defName="RNApparel_OpsCoreFASTBUMP_Multicam" or
+      defName="RNApparel_OpsCoreFASTCarbon_Grey" or
+      defName="RNApparel_MICH2000_CAG" or
+      defName="RNApparel_MICH2000_AmericanSniper" or
+      defName="RNApparel_Mk6BallisticHelmet_DDPM" or
+      defName="RNApparel_Mk6BallisticHelmet_Olive" or
+      defName="RNApparel_Mk6ABallisticHelmet_Black" or
+      defName="RNApparel_Mk7BallisticHelmet_Tan" or
+      defName="RNApparel_VestGuardPASGT_Black" or
+      defName="RNApparel_VestGuardPASGT_PRESS" or
+      defName="RNApparel_PASGT_Tan" or
+      defName="RNApparel_PASGT_ENVO" or
+      defName="RNApparel_LWH_DMARPAT" or
+      defName="RNApparel_ACH_UCP" or
+      defName="RNApparel_LZSH2DTM_Olive" or
+      defName="RNApparel_STSh81_Helmet" or
+      defName="RNApparel_6B48_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+    <value>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <!-- removing unneeded equipped stat offsets -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RNApparel_Mk6BallisticHelmet_DDPM" or
+      defName="RNApparel_Mk6BallisticHelmet_Olive" or
+      defName="RNApparel_Mk6ABallisticHelmet_Black" or
+      defName="RNApparel_Mk7BallisticHelmet_Tan" or
+      defName="RNApparel_3MF70HighCut_Tan" or
+      defName="RNApparel_6B48_Helmet" or
+      defName="RNApparel_OpsCoreFAST_Tan" or
+      defName="RNApparel_OpsCoreFASTBUMP_Multicam" or
+      defName="RNApparel_OpsCoreFASTCarbon_Grey" or
+      defName="RNApparel_FLUXBallisticHelmet_Raid" or
+      defName="RNApparel_VestGuardPASGT_Black" or
+      defName="RNApparel_PASGT_Tan" or
+      defName="RNApparel_PASGT_ENVO" or
+      defName="RNApparel_LWH_DMARPAT" or
+      defName="RNApparel_VestGuardFAST_Black" or
+      defName="RNApparel_STSh81_Helmet" or
+      defName="RNApparel_UaRmsTORD_Tan" or
+      defName="RNApparel_EXFILBallisticHelmet_Tan" or
+      defName="RNApparel_LZSH2DTM_Olive" or
+      defName="RNApparel_MICH2000_CAG" or
+      defName="RNApparel_MICH2000_AmericanSniper" or
+      defName="RNApparel_ACH_UCP"]/equippedStatOffsets</xpath>
+    <value>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    </value>
+  </Operation>
+
+  <!-- 6mm armour -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[
+      defName="RNApparel_Mk6BallisticHelmet_DDPM" or
+      defName="RNApparel_Mk6BallisticHelmet_Olive" or
+      defName="RNApparel_Mk6ABallisticHelmet_Black" or
+      defName="RNApparel_Mk7BallisticHelmet_Tan"]/costList</xpath>
+    <value>
+    <costList>
+      <DevilstrandCloth>10</DevilstrandCloth>
+    </costList>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RNApparel_Mk6BallisticHelmet_DDPM" or
+      defName="RNApparel_Mk6BallisticHelmet_Olive" or
+      defName="RNApparel_Mk6ABallisticHelmet_Black" or
+      defName="RNApparel_Mk7BallisticHelmet_Tan" or
+      defName="RNApparel_ProTecPrime_PizzaTime"]/statBases/Mass</xpath>
+        <value>
+            <Mass>1</Mass>
+        </value>
+  </Operation>
+
+  <!-- 8mm armour -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[
+      defName="RNApparel_3MF70HighCut_Tan" or
+      defName="RNApparel_6B48_Helmet" or
+      defName="RNApparel_OpsCoreFAST_Tan" or
+      defName="RNApparel_OpsCoreFASTBUMP_Multicam" or
+      defName="RNApparel_OpsCoreFASTCarbon_Grey" or
+      defName="RNApparel_FLUXBallisticHelmet_Raid" or
+      defName="RNApparel_VestGuardPASGT_Black" or
+      defName="RNApparel_PASGT_Tan" or
+      defName="RNApparel_PASGT_ENVO" or
+      defName="RNApparel_LWH_DMARPAT" or
+      defName="RNApparel_VestGuardFAST_Black" or
+      defName="RNApparel_STSh81_Helmet" or
+      defName="RNApparel_UaRmsTORD_Tan" or
+      defName="RNApparel_EXFILBallisticHelmet_Tan"]/costList</xpath>
+    <value>
+    <costList>
+      <DevilstrandCloth>15</DevilstrandCloth>
+    </costList>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RNApparel_3MF70HighCut_Tan" or
+      defName="RNApparel_6B48_Helmet" or
+      defName="RNApparel_OpsCoreFAST_Tan" or
+      defName="RNApparel_OpsCoreFASTBUMP_Multicam" or
+      defName="RNApparel_OpsCoreFASTCarbon_Grey" or
+      defName="RNApparel_FLUXBallisticHelmet_Raid" or
+      defName="RNApparel_VestGuardPASGT_Black" or
+      defName="RNApparel_PASGT_Tan" or
+      defName="RNApparel_PASGT_ENVO" or
+      defName="RNApparel_LWH_DMARPAT" or
+      defName="RNApparel_VestGuardFAST_Black" or
+      defName="RNApparel_STSh81_Helmet" or
+      defName="RNApparel_UaRmsTORD_Tan" or
+      defName="RNApparel_EXFILBallisticHelmet_Tan"]/statBases/Mass</xpath>
+        <value>
+            <Mass>1.2</Mass>
+        </value>
+  </Operation>
+
+  <!-- 10mm armour -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[
+      defName="RNApparel_LZSH2DTM_Olive" or
+      defName="RNApparel_MICH2000_CAG" or
+      defName="RNApparel_MICH2000_AmericanSniper" or
+      defName="RNApparel_ACH_UCP"]/costList</xpath>
+    <value>
+    <costList>
+      <DevilstrandCloth>20</DevilstrandCloth>
+    </costList>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RNApparel_LZSH2DTM_Olive" or
+      defName="RNApparel_MICH2000_CAG" or
+      defName="RNApparel_MICH2000_AmericanSniper" or
+      defName="RNApparel_ACH_UCP"]/statBases/Mass</xpath>
+        <value>
+            <Mass>1.4</Mass>
+        </value>
+  </Operation>
+</Patch>

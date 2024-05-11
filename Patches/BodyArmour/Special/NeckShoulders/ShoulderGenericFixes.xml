@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="RNApparel_Defender2_Tan" or
+            defName="RNApparel_PinnacleArmor_DragonSkin" or
+            defName = "RNApparel_IOTV_UCP" or
+            defName="RNApparel_MTV_Tan" or
+            defName="RNApparel_VestguardOT103_Navy" or
+            defName = "RNApparel_OTV_Tan" or
+            defName="RNApparel_PASGTVest_Olive"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                        </li>
+                        <li>
+                        <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+                        <parts>
+                            <li>Shoulder</li>
+                        </parts>
+                        </li>
+                        <li>
+                        <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+                        <parts>
+                            <li>Shoulder</li>
+                        </parts>
+                    </li>
+               </stats>
+             </li>
+        </value>
+    </Operation>
+
+    <!-- armour with pouches -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "RNApparel_IOTV_UCP" or
+            defName = "RNApparel_OTV_Tan" or
+            defName="RNApparel_PASGTVest_Olive"]/equippedStatOffsets</xpath>
+            <value>
+            <equippedStatOffsets>
+                <CarryBulk>20</CarryBulk>
+                <ReloadSpeed>0.1</ReloadSpeed>
+            </equippedStatOffsets>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "RNApparel_IOTV_UCP" or
+            defName = "RNApparel_OTV_Tan" or
+            defName="RNApparel_PASGTVest_Olive"]/apparel/layers </xpath>
+        <value>
+            <layers>
+                <li>Middle</li>
+                <li>Webbing</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <!-- armour with nothing -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_Defender2_Tan" or
+            defName="RNApparel_PinnacleArmor_DragonSkin" or
+            defName="RNApparel_GalacTecBodyArmour_Tan" or
+            defName="RNApparel_MTV_Tan" or
+            defName="RNApparel_VestguardOT103_Navy"]/equippedStatOffsets</xpath>
+        <value>
+        <equippedStatOffsets>
+        </equippedStatOffsets>
+        </value>
+    </Operation>
+
+    <!-- 16mm -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_Defender2_Tan" or
+            defName="RNApparel_GalacTecBodyArmour_Tan" or
+            defName = "RNApparel_IOTV_UCP" or
+            defName="RNApparel_MTV_Tan" or
+            defName="RNApparel_VestguardOT103_Navy" or
+            defName = "RNApparel_OTV_Tan" or
+            defName="RNApparel_PASGTVest_Olive"]/costList</xpath>
+        <value>
+            <costList>
+                <Cloth>35</Cloth>
+                <DevilstrandCloth>25</DevilstrandCloth>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_Defender2_Tan" or
+            defName="RNApparel_GalacTecBodyArmour_Tan" or
+            defName = "RNApparel_IOTV_UCP" or
+            defName="RNApparel_MTV_Tan" or
+            defName="RNApparel_VestguardOT103_Navy" or
+            defName = "RNApparel_OTV_Tan" or
+            defName="RNApparel_PASGTVest_Olive"]/statBases/Mass</xpath>
+            <value>
+                <Mass>12</Mass>
+            </value>
+    </Operation>
+
+    <!-- 18mm -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_PinnacleArmor_DragonSkin"]/costList</xpath>
+        <value>
+            <costList>
+                <Cloth>35</Cloth>
+                <DevilstrandCloth>30</DevilstrandCloth>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RNApparel_PinnacleArmor_DragonSkin"]/statBases/Mass</xpath>
+            <value>
+                <Mass>13</Mass>
+            </value>
+    </Operation>
+</Patch>

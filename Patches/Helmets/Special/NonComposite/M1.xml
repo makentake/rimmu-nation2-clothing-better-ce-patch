@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <!-- M1 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="RNApparel_M1Helmet_Vietnam"]/recipeMaker</xpath>
+        <value>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+        </value>
+    </Operation>
+</Patch>

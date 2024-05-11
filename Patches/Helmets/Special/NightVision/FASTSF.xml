@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <!-- OpsCore FAST Special Forces -->
+    <Operation Class="PatchOperationSequence"> 
+        <operations>
+            <!-- this commented stuff should aready be done natively now? -->
+            <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_SF"]/stuffCategories</xpath>
+            <value>
+                <stuffCategories>
+                <li>Steeled</li>
+                </stuffCategories>
+            </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_SF"]/statBases</xpath>
+                <value>
+                    <Bulk>4.5</Bulk>
+                    <WornBulk>1</WornBulk>
+                    <ArmorRating_Sharp>8</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>16</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.54</ArmorRating_Heat>
+                    <NightVisionEfficiency_Apparel>0.5</NightVisionEfficiency_Apparel>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName = "RNApparel_OpsCoreFAST_SF"]/equippedStatOffsets</xpath>
+                <value>
+                    <equippedStatOffsets>
+                        <PsychicSensitivity>-0.10</PsychicSensitivity>
+                    </equippedStatOffsets>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_SF"]/costList</xpath>
+                <value>
+                <costList>
+                    <ComponentIndustrial>5</ComponentIndustrial>
+			        <Plasteel>10</Plasteel>
+                    <DevilstrandCloth>15</DevilstrandCloth>
+                </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_SF"]/recipeMaker/researchPrerequisite</xpath>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_SF"]/recipeMaker</xpath>
+                <value>
+                  <researchPrerequisites>
+                    <li>FlakArmor</li>
+                    <li>CE_AdvancedNV</li>
+                  </researchPrerequisites>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

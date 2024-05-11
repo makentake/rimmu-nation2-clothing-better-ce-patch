@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+        <!-- shouldn't be required because it should be patched now? -->
+        <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam"]/statBases</xpath>
+            <value>
+                <Bulk>6</Bulk>
+                <WornBulk>3</WornBulk>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam"]/statBases/Mass</xpath>
+            <value>
+                <Mass>11</Mass>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam"]/statBases/MaxHitPoints</xpath>
+            <value>
+                <MaxHitPoints>75</MaxHitPoints>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam"]/statBases/ArmorRating_Sharp</xpath>
+            <value>
+                <ArmorRating_Sharp>14</ArmorRating_Sharp>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam"]/statBases/ArmorRating_Blunt</xpath>
+            <value>
+                <ArmorRating_Blunt>20</ArmorRating_Blunt>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+</Patch>

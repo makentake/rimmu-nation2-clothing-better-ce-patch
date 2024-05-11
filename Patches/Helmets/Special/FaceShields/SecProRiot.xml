@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <!-- SecPro Riot -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_SecProHelmet_Riot"]/costList</xpath>
+            <value>
+            <costList>
+                <DevilstrandCloth>10</DevilstrandCloth>
+                <Chemfuel>15</Chemfuel>
+            </costList>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+</Patch>

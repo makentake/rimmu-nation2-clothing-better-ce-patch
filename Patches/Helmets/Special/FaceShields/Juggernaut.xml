@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <!-- Juggernaut -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName = "RNApparel_Helmet_Juggernaut"]/equippedStatOffsets</xpath>
+            <value>
+            <equippedStatOffsets>
+                <AimingAccuracy>-0.1</AimingAccuracy>
+                <Suppressability>-0.10</Suppressability>
+                <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+                <SmokeSensitivity>-1</SmokeSensitivity>
+            </equippedStatOffsets>
+            </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef[defName = "RNApparel_Helmet_Juggernaut"]</xpath>
+            <value>
+            <li Class="CombatExtended.ApparelHediffExtension">
+                <hediff>WearingGasMask</hediff>
+            </li>
+            <li Class="CombatExtended.ApperalRenderingExtension">
+                <HideHair>true</HideHair>
+                <HideBeard>true</HideBeard>
+            </li>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_Helmet_Juggernaut"]/costList</xpath>
+            <value>
+            <costList>
+                <DevilstrandCloth>30</DevilstrandCloth>
+                <Chemfuel>45</Chemfuel>
+            </costList>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+</Patch>

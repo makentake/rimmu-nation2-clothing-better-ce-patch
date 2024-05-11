@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+    <!-- GalacTac FAST Helmet-->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef[defName="RNApparel_GalacTacFAST_Tan"]</xpath>
+            <value>
+                <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                    <ArmorRating_Sharp>0.33</ArmorRating_Sharp>
+                    <parts>
+                        <li>Eye</li>
+                    </parts>
+                    </li>
+                    <li>
+                    <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+                    <parts>
+                        <li>Eye</li>
+                    </parts>
+                    </li>
+                    <li>
+                    <ArmorRating_Sharp>0.33</ArmorRating_Sharp>
+                    <parts>
+                        <li>Nose</li>
+                    </parts>
+                    </li>
+                    <li>
+                    <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+                    <parts>
+                        <li>Nose</li>
+                    </parts>
+                    </li>
+                    <li>
+                    <ArmorRating_Sharp>0.33</ArmorRating_Sharp>
+                    <parts>
+                        <li>Jaw</li>
+                    </parts>
+                    </li>
+                    <li>
+                    <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+                    <parts>
+                        <li>Jaw</li>
+                    </parts>
+                    </li>
+                </stats>
+                </li>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName = "RNApparel_GalacTacFAST_Tan"]/equippedStatOffsets</xpath>
+            <value>
+                <equippedStatOffsets>
+                    <AimingAccuracy>-0.1</AimingAccuracy>
+                    <Suppressability>-0.10</Suppressability>
+                    <PsychicSensitivity>-0.10</PsychicSensitivity>
+                </equippedStatOffsets>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="RNApparel_GalacTacFAST_Tan"]/costList</xpath>
+            <value>
+            <costList>
+                <DevilstrandCloth>20</DevilstrandCloth>
+            </costList>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+</Patch>
